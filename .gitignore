@@ -1,0 +1,6 @@
+# Jangan simpan plugin Neovim
+nvim/.config/nvim/lazy-lock.json
+
+# Jangan simpan plugin Tmux (biar di-download ulang lewat TPM)
+tmux/.tmux/plugins/
+

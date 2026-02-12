@@ -1,0 +1,43 @@
+[user]
+    name = arzachelagfir-dev
+    email = arzachelagfir120@gmail.com
+
+[core]
+    editor = nvim
+    # Menggunakan delta sebagai pager supaya diff lebih enak dilihat
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true    # pakai n dan N buat pindah antar file di diff
+    light = false      # set true kalau pakai tema terang
+    side-by-side = true # tampilan split kanan-kiri pas diff
+    line-numbers = true
+    # Kamu bisa cari tema catppuccin khusus delta kalau mau lebih spesifik
+
+[merge]
+    conflictstyle = zdiff3
+
+[diff]
+    colorMoved = default
+
+[alias]
+    # Alias biar ngetik lebih cepet
+    st = status
+    co = checkout
+    cm = commit -m
+    br = branch
+    lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+    
+    # Alias buat benerin typo
+    last = log -1 HEAD
+    unstage = reset HEAD --
+
+[init]
+    defaultBranch = main
+
+[push]
+    autoSetupRemote = true
+

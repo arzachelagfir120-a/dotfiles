@@ -1,0 +1,18 @@
+# Format prompt yang minimalis namun informatif
+format = """
+$directory\
+$git_branch\
+$git_status\
+$character"""
+
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[➜](bold red)"
+
+[directory]
+style = "bold blue"
+
+[git_branch]
+symbol = " "
+style = "bold magenta"
+
