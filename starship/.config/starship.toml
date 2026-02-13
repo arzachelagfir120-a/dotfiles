@@ -1,4 +1,4 @@
-# Format prompt yang minimalis namun informatif
+
 format = """
 $directory\
 $git_branch\
